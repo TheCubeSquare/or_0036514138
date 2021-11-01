@@ -1,0 +1,122 @@
+[
+  {
+    "idgame": 187645,
+    "name": "Star Wars: Rebellion",
+    "year": 2016,
+    "minplayers": 2,
+    "maxplayers": 4,
+    "averagerating": 8.42,
+    "averagecomplexity": 3.71,
+    "playtime": 240,
+    "domainscolumn": "{\"Thematic games\"}",
+    "mechanicscolumn": "{\"Area Majority / Influence\",\"Area Movement\",Area-Impulse,\"Delayed Purchase\",\"Dice Rolling\",\"Hand Management\",\"Team-Based Game\",\"Variable Player Powers\"}"
+  },
+  {
+    "idgame": 220308,
+    "name": "Gaia Project",
+    "year": 2017,
+    "minplayers": 1,
+    "maxplayers": 4,
+    "averagerating": 8.49,
+    "averagecomplexity": 4.35,
+    "playtime": 150,
+    "domainscolumn": "{\"Strategy Games\"}",
+    "mechanicscolumn": "{\"End Game Bonuses\",\"Hexagon Grid\",Income,\"Modular Board\",\"Network and Route Building\",\"Solo / Solitaire game\",\"Tech Trees / Tech Tracks\",\"Turn Order: Pass Order\",\"Variable Player Powers\",\"Variable Set-up\",\"Victory Points as a Resource\"}"
+  },
+  {
+    "idgame": 182028,
+    "name": "Through the Ages: A New Story of Civilization",
+    "year": 2015,
+    "minplayers": 2,
+    "maxplayers": 4,
+    "averagerating": 8.43,
+    "averagecomplexity": 4.41,
+    "playtime": 120,
+    "domainscolumn": "{\"Strategy Games\"}",
+    "mechanicscolumn": "{\"Action Points\",Auction/Bidding,\"Auction: Dutch\",\"Card Drafting\",Events,Income,\"Take That\"}"
+  },
+  {
+    "idgame": 224517,
+    "name": "Brass: Birmingham",
+    "year": 2018,
+    "minplayers": 2,
+    "maxplayers": 4,
+    "averagerating": 8.66,
+    "averagecomplexity": 3.91,
+    "playtime": 120,
+    "domainscolumn": "{\"Strategy Games\"}",
+    "mechanicscolumn": "{\"Hand Management\",Income,Loans,Market,\"Network and Route Building\",\"Score-and-Reset Game\",\"Tech Trees / Tech Tracks\",\"Turn Order: Stat Based\",\"Variable Set-up\"}"
+  },
+  {
+    "idgame": 291457,
+    "name": "Gloomhaven: Jaws of the Lion",
+    "year": 2020,
+    "minplayers": 1,
+    "maxplayers": 4,
+    "averagerating": 8.87,
+    "averagecomplexity": 3.55,
+    "playtime": 120,
+    "domainscolumn": "{\"Strategy Games\",\"Thematic games\"}",
+    "mechanicscolumn": "{\"Action Queue\",\"Campaign / Battle Card Driven\",\"Comunication Limits\",\"Cooperative Game\",\"Critical Hits and Failures\",\"Deck Construction\",\"Grid Movement\",\"Hand Management\",\"Hexagon Grid\",\"Legacy Game\",\"Line of Sight\",\"One-Per-Game Abilities\",\"Scenario / Mission / Campaign Game\",\"Simultaneous Action Selection\",\"Solo / Solitaire game\",\"Variable Player Powers\"}"
+  },
+  {
+    "idgame": 12333,
+    "name": "Twilight Struggle",
+    "year": 2005,
+    "minplayers": 2,
+    "maxplayers": 2,
+    "averagerating": 8.29,
+    "averagecomplexity": 3.59,
+    "playtime": 180,
+    "domainscolumn": "{\"Strategy Games\",Wargames}",
+    "mechanicscolumn": "{Action/Event,\"Advantage Token\",\"Area Majority / Influence\",\"Campaign / Battle Card Driven\",\"Dice Rolling\",\"Hand Management\",Simulation,\"Simultaneous Action Selection\",\"Sudden Death Ending\",\"Tug of War\"}"
+  },
+  {
+    "idgame": 174430,
+    "name": "Gloomhaven",
+    "year": 2017,
+    "minplayers": 1,
+    "maxplayers": 4,
+    "averagerating": 8.79,
+    "averagecomplexity": 3.86,
+    "playtime": 120,
+    "domainscolumn": "{\"Strategy Games\",\"Thematic games\"}",
+    "mechanicscolumn": "{\"Action Queue\",\"Action Retrieval\",\"Campaign / Battle Card Driven\",\"Card Play Conflict Resolution\",\"Comunication Limits\",\"Cooperative Game\",\"Deck Construction\",\"Deck Bag and Pool Building\",\"Grid Movement\",\"Hand Management\",\"Hexagon Grid\",\"Legacy Game\",\"Modular Board\",\"One-Per-Game Abilities\",\"Scenario / Mission / Campaign Game\",\"Simultaneous Action Selection\",\"Solo / Solitaire game\",Storytelling,\"Variable Player Powers\"}"
+  },
+  {
+    "idgame": 233078,
+    "name": "Twilight Imperium: Fourth Edition",
+    "year": 2017,
+    "minplayers": 3,
+    "maxplayers": 6,
+    "averagerating": 8.7,
+    "averagecomplexity": 4.22,
+    "playtime": 480,
+    "domainscolumn": "{\"Strategy Games\",\"Thematic games\"}",
+    "mechanicscolumn": "{\"Action Drafting\",\"Area Majority / Influence\",Area-Impulse,\"Dice Rolling\",Follow,\"Grid Movement\",\"Hexagon Grid\",\"Modular Board\",Trading,\"Variable Phase Order\",\"Variable Player Powers\",Voting}"
+  },
+  {
+    "idgame": 167791,
+    "name": "Terraforming Mars",
+    "year": 2016,
+    "minplayers": 1,
+    "maxplayers": 5,
+    "averagerating": 8.43,
+    "averagecomplexity": 3.24,
+    "playtime": 120,
+    "domainscolumn": "{\"Strategy Games\"}",
+    "mechanicscolumn": "{\"Card Drafting\",Drafting,\"End Game Bonuses\",\"Hand Management\",\"Hexagon Grid\",Income,\"Set Collection\",\"Solo / Solitaire game\",\"Take That\",\"Tile Placement\",\"Turn Order: Progressive\",\"Variable Player Powers\"}"
+  },
+  {
+    "idgame": 161936,
+    "name": "Pandemic Legacy: Season 1",
+    "year": 2015,
+    "minplayers": 2,
+    "maxplayers": 4,
+    "averagerating": 8.61,
+    "averagecomplexity": 2.84,
+    "playtime": 60,
+    "domainscolumn": "{\"Strategy Games\",\"Thematic games\"}",
+    "mechanicscolumn": "{\"Action Points\",\"Cooperative Game\",\"Hand Management\",\"Legacy Game\",\"Point to Point Movement\",\"Set Collection\",Trading,\"Variable Player Powers\"}"
+  }
+]

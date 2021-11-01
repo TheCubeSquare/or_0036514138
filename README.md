@@ -1,0 +1,20 @@
+- licence: Creative Commons Attribution 4.0 International (CC BY 4.0)
+- author: Matija Bognar
+- version: 1.0
+- language: english
+- attributes:
+	- id
+	- name
+	- year
+	- minplayers
+	- maxplayers
+	- playtime
+	- averagerating
+	- averagecomplexity
+	- mechanics
+	- domains
+- data source link: https://ieee-dataport.org/open-access/boardgamegeek-dataset-board-games
+- available formats: csv, json
+- object count: 10
+- year published: 2021.
+- child attributes: 2

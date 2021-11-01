@@ -1,0 +1,421 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 14.0
+-- Dumped by pg_dump version 14.0
+
+-- Started on 2021-11-02 00:05:36
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
+--
+-- TOC entry 213 (class 1259 OID 16494)
+-- Name: belongs_to; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.belongs_to (
+    idgame integer NOT NULL,
+    iddomain integer NOT NULL
+);
+
+
+--
+-- TOC entry 212 (class 1259 OID 16479)
+-- Name: contains; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.contains (
+    idmechainc integer NOT NULL,
+    idgame integer NOT NULL
+);
+
+
+--
+-- TOC entry 210 (class 1259 OID 16469)
+-- Name: domain; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.domain (
+    iddomain integer NOT NULL,
+    name character varying(100) NOT NULL
+);
+
+
+--
+-- TOC entry 211 (class 1259 OID 16474)
+-- Name: game; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.game (
+    idgame integer NOT NULL,
+    name character varying(100) NOT NULL,
+    year integer NOT NULL,
+    minplayers integer NOT NULL,
+    maxplayers integer NOT NULL,
+    averagerating numeric(4,2) NOT NULL,
+    averagecomplexity numeric(4,2) NOT NULL,
+    playtime integer NOT NULL
+);
+
+
+--
+-- TOC entry 209 (class 1259 OID 16464)
+-- Name: mechanic; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.mechanic (
+    idmechainc integer NOT NULL,
+    name character varying(100) NOT NULL
+);
+
+
+--
+-- TOC entry 3336 (class 0 OID 16494)
+-- Dependencies: 213
+-- Data for Name: belongs_to; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.belongs_to (idgame, iddomain) FROM stdin;
+174430	1
+174430	2
+161936	1
+161936	2
+224517	1
+167791	1
+233078	1
+233078	2
+291457	1
+291457	2
+182028	1
+220308	1
+187645	2
+12333	1
+12333	3
+\.
+
+
+--
+-- TOC entry 3335 (class 0 OID 16479)
+-- Dependencies: 212
+-- Data for Name: contains; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.contains (idmechainc, idgame) FROM stdin;
+1	174430
+2	174430
+3	174430
+4	174430
+5	174430
+6	174430
+7	174430
+8	174430
+9	174430
+10	174430
+11	174430
+12	174430
+13	174430
+14	174430
+15	174430
+16	174430
+17	174430
+18	174430
+19	174430
+20	161936
+6	161936
+10	161936
+12	161936
+21	161936
+22	161936
+23	161936
+19	161936
+10	224517
+24	224517
+25	224517
+26	224517
+27	224517
+28	224517
+29	224517
+30	224517
+31	224517
+32	167791
+33	167791
+34	167791
+10	167791
+11	167791
+24	167791
+22	167791
+17	167791
+35	167791
+36	167791
+37	167791
+19	167791
+38	233078
+39	233078
+40	233078
+41	233078
+42	233078
+9	233078
+11	233078
+13	233078
+23	233078
+43	233078
+19	233078
+44	233078
+1	291457
+3	291457
+5	291457
+6	291457
+45	291457
+7	291457
+9	291457
+10	291457
+11	291457
+12	291457
+46	291457
+14	291457
+15	291457
+16	291457
+17	291457
+19	291457
+20	182028
+47	182028
+48	182028
+32	182028
+49	182028
+24	182028
+35	182028
+34	220308
+11	220308
+24	220308
+13	220308
+27	220308
+17	220308
+29	220308
+50	220308
+19	220308
+31	220308
+51	220308
+39	187645
+52	187645
+40	187645
+53	187645
+41	187645
+10	187645
+54	187645
+19	187645
+55	12333
+56	12333
+39	12333
+3	12333
+41	12333
+10	12333
+57	12333
+16	12333
+58	12333
+59	12333
+\.
+
+
+--
+-- TOC entry 3333 (class 0 OID 16469)
+-- Dependencies: 210
+-- Data for Name: domain; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.domain (iddomain, name) FROM stdin;
+1	Strategy Games
+2	Thematic games
+3	Wargames
+\.
+
+
+--
+-- TOC entry 3334 (class 0 OID 16474)
+-- Dependencies: 211
+-- Data for Name: game; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.game (idgame, name, year, minplayers, maxplayers, averagerating, averagecomplexity, playtime) FROM stdin;
+174430	Gloomhaven	2017	1	4	8.79	3.86	120
+161936	Pandemic Legacy: Season 1	2015	2	4	8.61	2.84	60
+224517	Brass: Birmingham	2018	2	4	8.66	3.91	120
+167791	Terraforming Mars	2016	1	5	8.43	3.24	120
+233078	Twilight Imperium: Fourth Edition	2017	3	6	8.70	4.22	480
+291457	Gloomhaven: Jaws of the Lion	2020	1	4	8.87	3.55	120
+182028	Through the Ages: A New Story of Civilization	2015	2	4	8.43	4.41	120
+220308	Gaia Project	2017	1	4	8.49	4.35	150
+187645	Star Wars: Rebellion	2016	2	4	8.42	3.71	240
+12333	Twilight Struggle	2005	2	2	8.29	3.59	180
+\.
+
+
+--
+-- TOC entry 3332 (class 0 OID 16464)
+-- Dependencies: 209
+-- Data for Name: mechanic; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.mechanic (idmechainc, name) FROM stdin;
+1	Action Queue
+2	Action Retrieval
+3	Campaign / Battle Card Driven
+4	Card Play Conflict Resolution
+5	Comunication Limits
+6	Cooperative Game
+7	Deck Construction
+8	Deck Bag and Pool Building
+9	Grid Movement
+10	Hand Management
+11	Hexagon Grid
+12	Legacy Game
+13	Modular Board
+14	One-Per-Game Abilities
+15	Scenario / Mission / Campaign Game
+16	Simultaneous Action Selection
+17	Solo / Solitaire game
+18	Storytelling
+19	Variable Player Powers
+20	Action Points
+21	Point to Point Movement
+22	Set Collection
+23	Trading
+24	Income
+25	Loans
+26	Market
+27	Network and Route Building
+28	Score-and-Reset Game
+29	Tech Trees / Tech Tracks
+30	Turn Order: Stat Based
+31	Variable Set-up
+32	Card Drafting
+33	Drafting
+34	End Game Bonuses
+35	Take That
+36	Tile Placement
+37	Turn Order: Progressive
+38	Action Drafting
+39	Area Majority / Influence
+40	Area-Impulse
+41	Dice Rolling
+42	Follow
+43	Variable Phase Order
+44	Voting
+45	Critical Hits and Failures
+46	Line of Sight
+47	Auction/Bidding
+48	Auction: Dutch
+49	Events
+50	Turn Order: Pass Order
+51	Victory Points as a Resource
+52	Area Movement
+53	Delayed Purchase
+54	Team-Based Game
+55	Action/Event
+56	Advantage Token
+57	Simulation
+58	Sudden Death Ending
+59	Tug of War
+\.
+
+
+--
+-- TOC entry 3188 (class 2606 OID 16498)
+-- Name: belongs_to belongs_to_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.belongs_to
+    ADD CONSTRAINT belongs_to_pkey PRIMARY KEY (idgame, iddomain);
+
+
+--
+-- TOC entry 3186 (class 2606 OID 16483)
+-- Name: contains contains_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.contains
+    ADD CONSTRAINT contains_pkey PRIMARY KEY (idmechainc, idgame);
+
+
+--
+-- TOC entry 3182 (class 2606 OID 16473)
+-- Name: domain domain_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.domain
+    ADD CONSTRAINT domain_pkey PRIMARY KEY (iddomain);
+
+
+--
+-- TOC entry 3184 (class 2606 OID 16478)
+-- Name: game game_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.game
+    ADD CONSTRAINT game_pkey PRIMARY KEY (idgame);
+
+
+--
+-- TOC entry 3180 (class 2606 OID 16468)
+-- Name: mechanic mechanic_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.mechanic
+    ADD CONSTRAINT mechanic_pkey PRIMARY KEY (idmechainc);
+
+
+--
+-- TOC entry 3192 (class 2606 OID 16504)
+-- Name: belongs_to belongs_to_iddomain_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.belongs_to
+    ADD CONSTRAINT belongs_to_iddomain_fkey FOREIGN KEY (iddomain) REFERENCES public.domain(iddomain);
+
+
+--
+-- TOC entry 3191 (class 2606 OID 16499)
+-- Name: belongs_to belongs_to_idgame_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.belongs_to
+    ADD CONSTRAINT belongs_to_idgame_fkey FOREIGN KEY (idgame) REFERENCES public.game(idgame);
+
+
+--
+-- TOC entry 3190 (class 2606 OID 16489)
+-- Name: contains contains_idgame_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.contains
+    ADD CONSTRAINT contains_idgame_fkey FOREIGN KEY (idgame) REFERENCES public.game(idgame);
+
+
+--
+-- TOC entry 3189 (class 2606 OID 16484)
+-- Name: contains contains_idmechainc_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.contains
+    ADD CONSTRAINT contains_idmechainc_fkey FOREIGN KEY (idmechainc) REFERENCES public.mechanic(idmechainc);
+
+
+-- Completed on 2021-11-02 00:05:36
+
+--
+-- PostgreSQL database dump complete
+--
+
