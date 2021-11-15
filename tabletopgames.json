@@ -8,8 +8,46 @@
     "averagerating": 8.42,
     "averagecomplexity": 3.71,
     "playtime": 240,
-    "domainscolumn": "{\"Thematic games\"}",
-    "mechanicscolumn": "{\"Area Majority / Influence\",\"Area Movement\",Area-Impulse,\"Delayed Purchase\",\"Dice Rolling\",\"Hand Management\",\"Team-Based Game\",\"Variable Player Powers\"}"
+    "domainscolumn": [
+      {
+        "iddomain": 2,
+        "name": "Thematic Games"
+      }
+    ],
+    "mechanicscolumn": [
+      {
+        "idmechanic": 10,
+        "name": "Hand Management"
+      },
+      {
+        "idmechanic": 19,
+        "name": "Variable Player Powers"
+      },
+      {
+        "idmechanic": 39,
+        "name": "Area Majority / Influence"
+      },
+      {
+        "idmechanic": 40,
+        "name": "Area-Impulse"
+      },
+      {
+        "idmechanic": 41,
+        "name": "Dice Rolling"
+      },
+      {
+        "idmechanic": 52,
+        "name": "Area Movement"
+      },
+      {
+        "idmechanic": 53,
+        "name": "Delayed Purchase"
+      },
+      {
+        "idmechanic": 54,
+        "name": "Team-Based Game"
+      }
+    ]
   },
   {
     "idgame": 220308,
@@ -20,8 +58,58 @@
     "averagerating": 8.49,
     "averagecomplexity": 4.35,
     "playtime": 150,
-    "domainscolumn": "{\"Strategy Games\"}",
-    "mechanicscolumn": "{\"End Game Bonuses\",\"Hexagon Grid\",Income,\"Modular Board\",\"Network and Route Building\",\"Solo / Solitaire game\",\"Tech Trees / Tech Tracks\",\"Turn Order: Pass Order\",\"Variable Player Powers\",\"Variable Set-up\",\"Victory Points as a Resource\"}"
+    "domainscolumn": [
+      {
+        "iddomain": 1,
+        "name": "Strategy Games"
+      }
+    ],
+    "mechanicscolumn": [
+      {
+        "idmechanic": 11,
+        "name": "Hexagon Grid"
+      },
+      {
+        "idmechanic": 13,
+        "name": "Modular Board"
+      },
+      {
+        "idmechanic": 17,
+        "name": "Solo / Solitaire game"
+      },
+      {
+        "idmechanic": 19,
+        "name": "Variable Player Powers"
+      },
+      {
+        "idmechanic": 24,
+        "name": "Income"
+      },
+      {
+        "idmechanic": 27,
+        "name": "Network and Route Building"
+      },
+      {
+        "idmechanic": 29,
+        "name": "Tech Trees / Tech Tracks"
+      },
+      {
+        "idmechanic": 31,
+        "name": "Variable Set-up"
+      },
+      {
+        "idmechanic": 34,
+        "name": "End Game Bonuses"
+      },
+      {
+        "idmechanic": 50,
+        "name": "Turn Order: Pass Order"
+      },
+      {
+        "idmechanic": 51,
+        "name": "Victory Points as a Resource"
+      }
+    ]
   },
   {
     "idgame": 182028,
@@ -32,8 +120,42 @@
     "averagerating": 8.43,
     "averagecomplexity": 4.41,
     "playtime": 120,
-    "domainscolumn": "{\"Strategy Games\"}",
-    "mechanicscolumn": "{\"Action Points\",Auction/Bidding,\"Auction: Dutch\",\"Card Drafting\",Events,Income,\"Take That\"}"
+    "domainscolumn": [
+      {
+        "iddomain": 1,
+        "name": "Strategy Games"
+      }
+    ],
+    "mechanicscolumn": [
+      {
+        "idmechanic": 20,
+        "name": "Action Points"
+      },
+      {
+        "idmechanic": 24,
+        "name": "Income"
+      },
+      {
+        "idmechanic": 32,
+        "name": "Card Drafting"
+      },
+      {
+        "idmechanic": 35,
+        "name": "Take That"
+      },
+      {
+        "idmechanic": 47,
+        "name": "Auction/Bidding"
+      },
+      {
+        "idmechanic": 48,
+        "name": "Auction: Dutch"
+      },
+      {
+        "idmechanic": 49,
+        "name": "Events"
+      }
+    ]
   },
   {
     "idgame": 224517,
@@ -44,8 +166,50 @@
     "averagerating": 8.66,
     "averagecomplexity": 3.91,
     "playtime": 120,
-    "domainscolumn": "{\"Strategy Games\"}",
-    "mechanicscolumn": "{\"Hand Management\",Income,Loans,Market,\"Network and Route Building\",\"Score-and-Reset Game\",\"Tech Trees / Tech Tracks\",\"Turn Order: Stat Based\",\"Variable Set-up\"}"
+    "domainscolumn": [
+      {
+        "iddomain": 1,
+        "name": "Strategy Games"
+      }
+    ],
+    "mechanicscolumn": [
+      {
+        "idmechanic": 10,
+        "name": "Hand Management"
+      },
+      {
+        "idmechanic": 24,
+        "name": "Income"
+      },
+      {
+        "idmechanic": 25,
+        "name": "Loans"
+      },
+      {
+        "idmechanic": 26,
+        "name": "Market"
+      },
+      {
+        "idmechanic": 27,
+        "name": "Network and Route Building"
+      },
+      {
+        "idmechanic": 28,
+        "name": "Score-and-Reset Game"
+      },
+      {
+        "idmechanic": 29,
+        "name": "Tech Trees / Tech Tracks"
+      },
+      {
+        "idmechanic": 30,
+        "name": "Turn Order: Stat Based"
+      },
+      {
+        "idmechanic": 31,
+        "name": "Variable Set-up"
+      }
+    ]
   },
   {
     "idgame": 291457,
@@ -56,8 +220,82 @@
     "averagerating": 8.87,
     "averagecomplexity": 3.55,
     "playtime": 120,
-    "domainscolumn": "{\"Strategy Games\",\"Thematic games\"}",
-    "mechanicscolumn": "{\"Action Queue\",\"Campaign / Battle Card Driven\",\"Comunication Limits\",\"Cooperative Game\",\"Critical Hits and Failures\",\"Deck Construction\",\"Grid Movement\",\"Hand Management\",\"Hexagon Grid\",\"Legacy Game\",\"Line of Sight\",\"One-Per-Game Abilities\",\"Scenario / Mission / Campaign Game\",\"Simultaneous Action Selection\",\"Solo / Solitaire game\",\"Variable Player Powers\"}"
+    "domainscolumn": [
+      {
+        "iddomain": 1,
+        "name": "Strategy Games"
+      },
+      {
+        "iddomain": 2,
+        "name": "Thematic Games"
+      }
+    ],
+    "mechanicscolumn": [
+      {
+        "idmechanic": 1,
+        "name": "Action Queue"
+      },
+      {
+        "idmechanic": 3,
+        "name": "Campaign / Battle Card Driven"
+      },
+      {
+        "idmechanic": 5,
+        "name": "Comunication Limits"
+      },
+      {
+        "idmechanic": 6,
+        "name": "Cooperative Game"
+      },
+      {
+        "idmechanic": 7,
+        "name": "Critical Hits and Failures"
+      },
+      {
+        "idmechanic": 9,
+        "name": "Grid Movement"
+      },
+      {
+        "idmechanic": 10,
+        "name": "Hand Management"
+      },
+      {
+        "idmechanic": 11,
+        "name": "Hexagon Grid"
+      },
+      {
+        "idmechanic": 12,
+        "name": "Legacy Game"
+      },
+      {
+        "idmechanic": 14,
+        "name": "One-Per-Game Abilities"
+      },
+      {
+        "idmechanic": 15,
+        "name": "Scenario / Mission / Campaign Game"
+      },
+      {
+        "idmechanic": 16,
+        "name": "Simultaneous Action Selection"
+      },
+      {
+        "idmechanic": 17,
+        "name": "Solo / Solitaire game"
+      },
+      {
+        "idmechanic": 19,
+        "name": "Variable Player Powers"
+      },
+      {
+        "idmechanic": 45,
+        "name": "Critical Hits and Failures"
+      },
+      {
+        "idmechanic": 46,
+        "name": "Line of Sight"
+      }
+    ]
   },
   {
     "idgame": 12333,
@@ -68,8 +306,58 @@
     "averagerating": 8.29,
     "averagecomplexity": 3.59,
     "playtime": 180,
-    "domainscolumn": "{\"Strategy Games\",Wargames}",
-    "mechanicscolumn": "{Action/Event,\"Advantage Token\",\"Area Majority / Influence\",\"Campaign / Battle Card Driven\",\"Dice Rolling\",\"Hand Management\",Simulation,\"Simultaneous Action Selection\",\"Sudden Death Ending\",\"Tug of War\"}"
+    "domainscolumn": [
+      {
+        "iddomain": 1,
+        "name": "Strategy Games"
+      },
+      {
+        "iddomain": 3,
+        "name": "Wargames"
+      }
+    ],
+    "mechanicscolumn": [
+      {
+        "idmechanic": 3,
+        "name": "Campaign / Battle Card Driven"
+      },
+      {
+        "idmechanic": 10,
+        "name": "Hand Management"
+      },
+      {
+        "idmechanic": 16,
+        "name": "Simultaneous Action Selection"
+      },
+      {
+        "idmechanic": 39,
+        "name": "Area Majority / Influence"
+      },
+      {
+        "idmechanic": 41,
+        "name": "Dice Rolling"
+      },
+      {
+        "idmechanic": 55,
+        "name": "Action/Event"
+      },
+      {
+        "idmechanic": 56,
+        "name": "Advantage Token"
+      },
+      {
+        "idmechanic": 57,
+        "name": "Simulation"
+      },
+      {
+        "idmechanic": 58,
+        "name": "Sudden Death Ending"
+      },
+      {
+        "idmechanic": 59,
+        "name": "Tug of War"
+      }
+    ]
   },
   {
     "idgame": 174430,
@@ -80,8 +368,94 @@
     "averagerating": 8.79,
     "averagecomplexity": 3.86,
     "playtime": 120,
-    "domainscolumn": "{\"Strategy Games\",\"Thematic games\"}",
-    "mechanicscolumn": "{\"Action Queue\",\"Action Retrieval\",\"Campaign / Battle Card Driven\",\"Card Play Conflict Resolution\",\"Comunication Limits\",\"Cooperative Game\",\"Deck Construction\",\"Deck Bag and Pool Building\",\"Grid Movement\",\"Hand Management\",\"Hexagon Grid\",\"Legacy Game\",\"Modular Board\",\"One-Per-Game Abilities\",\"Scenario / Mission / Campaign Game\",\"Simultaneous Action Selection\",\"Solo / Solitaire game\",Storytelling,\"Variable Player Powers\"}"
+    "domainscolumn": [
+      {
+        "iddomain": 1,
+        "name": "Strategy Games"
+      },
+      {
+        "iddomain": 2,
+        "name": "Thematic Games"
+      }
+    ],
+    "mechanicscolumn": [
+      {
+        "idmechanic": 1,
+        "name": "Action Queue"
+      },
+      {
+        "idmechanic": 2,
+        "name": "Action Retrieval"
+      },
+      {
+        "idmechanic": 3,
+        "name": "Campaign / Battle Card Driven"
+      },
+      {
+        "idmechanic": 4,
+        "name": "Card Play Conflict Resolution"
+      },
+      {
+        "idmechanic": 5,
+        "name": "Comunication Limits"
+      },
+      {
+        "idmechanic": 6,
+        "name": "Cooperative Game"
+      },
+      {
+        "idmechanic": 7,
+        "name": "Deck Construction"
+      },
+      {
+        "idmechanic": 8,
+        "name": "Deck Bag and Pool Building"
+      },
+      {
+        "idmechanic": 9,
+        "name": "Grid Movement"
+      },
+      {
+        "idmechanic": 10,
+        "name": "Hand Management"
+      },
+      {
+        "idmechanic": 11,
+        "name": "Hexagon Grid"
+      },
+      {
+        "idmechanic": 12,
+        "name": "Legacy Game"
+      },
+      {
+        "idmechanic": 13,
+        "name": "Modular Board"
+      },
+      {
+        "idmechanic": 14,
+        "name": "One-Per-Game Abilities"
+      },
+      {
+        "idmechanic": 15,
+        "name": "Scenario / Mission / Campaign Game"
+      },
+      {
+        "idmechanic": 16,
+        "name": "Simultaneous Action Selection"
+      },
+      {
+        "idmechanic": 17,
+        "name": "Solo / Solitaire game"
+      },
+      {
+        "idmechanic": 18,
+        "name": "Storytelling"
+      },
+      {
+        "idmechanic": 19,
+        "name": "Variable Player Powers"
+      }
+    ]
   },
   {
     "idgame": 233078,
@@ -92,8 +466,66 @@
     "averagerating": 8.7,
     "averagecomplexity": 4.22,
     "playtime": 480,
-    "domainscolumn": "{\"Strategy Games\",\"Thematic games\"}",
-    "mechanicscolumn": "{\"Action Drafting\",\"Area Majority / Influence\",Area-Impulse,\"Dice Rolling\",Follow,\"Grid Movement\",\"Hexagon Grid\",\"Modular Board\",Trading,\"Variable Phase Order\",\"Variable Player Powers\",Voting}"
+    "domainscolumn": [
+      {
+        "iddomain": 1,
+        "name": "Strategy Games"
+      },
+      {
+        "iddomain": 2,
+        "name": "Thematic Games"
+      }
+    ],
+    "mechanicscolumn": [
+      {
+        "idmechanic": 9,
+        "name": "Grid Movement"
+      },
+      {
+        "idmechanic": 11,
+        "name": "Hexagon Grid"
+      },
+      {
+        "idmechanic": 13,
+        "name": "Modular Board"
+      },
+      {
+        "idmechanic": 19,
+        "name": "Variable Player Powers"
+      },
+      {
+        "idmechanic": 23,
+        "name": "Trading"
+      },
+      {
+        "idmechanic": 38,
+        "name": "Action Drafting"
+      },
+      {
+        "idmechanic": 39,
+        "name": "Area Majority / Influence"
+      },
+      {
+        "idmechanic": 40,
+        "name": "Area-Impulse"
+      },
+      {
+        "idmechanic": 41,
+        "name": "Dice Rolling"
+      },
+      {
+        "idmechanic": 42,
+        "name": "Follow"
+      },
+      {
+        "idmechanic": 43,
+        "name": "Variable Player Powers"
+      },
+      {
+        "idmechanic": 44,
+        "name": "Voting"
+      }
+    ]
   },
   {
     "idgame": 167791,
@@ -104,8 +536,62 @@
     "averagerating": 8.43,
     "averagecomplexity": 3.24,
     "playtime": 120,
-    "domainscolumn": "{\"Strategy Games\"}",
-    "mechanicscolumn": "{\"Card Drafting\",Drafting,\"End Game Bonuses\",\"Hand Management\",\"Hexagon Grid\",Income,\"Set Collection\",\"Solo / Solitaire game\",\"Take That\",\"Tile Placement\",\"Turn Order: Progressive\",\"Variable Player Powers\"}"
+    "domainscolumn": [
+      {
+        "iddomain": 1,
+        "name": "Strategy Games"
+      }
+    ],
+    "mechanicscolumn": [
+      {
+        "idmechanic": 10,
+        "name": "Hand Management"
+      },
+      {
+        "idmechanic": 11,
+        "name": "Hexagon Grid"
+      },
+      {
+        "idmechanic": 17,
+        "name": "Solo / Solitaire game"
+      },
+      {
+        "idmechanic": 19,
+        "name": "Variable Player Powers"
+      },
+      {
+        "idmechanic": 22,
+        "name": "Set Collection"
+      },
+      {
+        "idmechanic": 24,
+        "name": "Income"
+      },
+      {
+        "idmechanic": 32,
+        "name": "Card Drafting"
+      },
+      {
+        "idmechanic": 33,
+        "name": "Drafting"
+      },
+      {
+        "idmechanic": 34,
+        "name": "End Game Bonuses"
+      },
+      {
+        "idmechanic": 35,
+        "name": "Take That"
+      },
+      {
+        "idmechanic": 36,
+        "name": "Tile Placement"
+      },
+      {
+        "idmechanic": 37,
+        "name": "Turn Order: Progressive"
+      }
+    ]
   },
   {
     "idgame": 161936,
@@ -116,7 +602,49 @@
     "averagerating": 8.61,
     "averagecomplexity": 2.84,
     "playtime": 60,
-    "domainscolumn": "{\"Strategy Games\",\"Thematic games\"}",
-    "mechanicscolumn": "{\"Action Points\",\"Cooperative Game\",\"Hand Management\",\"Legacy Game\",\"Point to Point Movement\",\"Set Collection\",Trading,\"Variable Player Powers\"}"
+    "domainscolumn": [
+      {
+        "iddomain": 1,
+        "name": "Strategy Games"
+      },
+      {
+        "iddomain": 2,
+        "name": "Thematic Games"
+      }
+    ],
+    "mechanicscolumn": [
+      {
+        "idmechanic": 6,
+        "name": "Cooperative Game"
+      },
+      {
+        "idmechanic": 10,
+        "name": "Hand Management"
+      },
+      {
+        "idmechanic": 12,
+        "name": "Legacy Game"
+      },
+      {
+        "idmechanic": 19,
+        "name": "Variable Player Powers"
+      },
+      {
+        "idmechanic": 20,
+        "name": "Action Points"
+      },
+      {
+        "idmechanic": 21,
+        "name": "Point to Point Movement"
+      },
+      {
+        "idmechanic": 22,
+        "name": "Set Collection"
+      },
+      {
+        "idmechanic": 23,
+        "name": "Trading"
+      }
+    ]
   }
 ]
