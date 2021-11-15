@@ -1,0 +1,178 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": [],
+    "examples": [
+        [
+            {
+                "idgame": 187645,
+                "name": "Star Wars: Rebellion",
+                "year": 2016,
+                "minplayers": 2,
+                "maxplayers": 4,
+                "averagerating": 8.42,
+                "averagecomplexity": 3.71,
+                "playtime": 240,
+                "domainscolumn": "{\"Thematic games\"}",
+                "mechanicscolumn": "{\"Area Majority / Influence\",\"Area Movement\",Area-Impulse,\"Delayed Purchase\",\"Dice Rolling\",\"Hand Management\",\"Team-Based Game\",\"Variable Player Powers\"}"
+            },
+            {
+                "idgame": 220308,
+                "name": "Gaia Project",
+                "year": 2017,
+                "minplayers": 1,
+                "maxplayers": 4,
+                "averagerating": 8.49,
+                "averagecomplexity": 4.35,
+                "playtime": 150,
+                "domainscolumn": "{\"Strategy Games\"}",
+                "mechanicscolumn": "{\"End Game Bonuses\",\"Hexagon Grid\",Income,\"Modular Board\",\"Network and Route Building\",\"Solo / Solitaire game\",\"Tech Trees / Tech Tracks\",\"Turn Order: Pass Order\",\"Variable Player Powers\",\"Variable Set-up\",\"Victory Points as a Resource\"}"
+            }
+        ]
+    ],
+    "additionalItems": true,
+    "items": {
+        "$id": "#/items",
+        "anyOf": [
+            {
+                "$id": "#/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "idgame": 187645,
+                        "name": "Star Wars: Rebellion",
+                        "year": 2016,
+                        "minplayers": 2,
+                        "maxplayers": 4,
+                        "averagerating": 8.42,
+                        "averagecomplexity": 3.71,
+                        "playtime": 240,
+                        "domainscolumn": "{\"Thematic games\"}",
+                        "mechanicscolumn": "{\"Area Majority / Influence\",\"Area Movement\",Area-Impulse,\"Delayed Purchase\",\"Dice Rolling\",\"Hand Management\",\"Team-Based Game\",\"Variable Player Powers\"}"
+                    }
+                ],
+                "required": [
+                    "idgame",
+                    "name",
+                    "year",
+                    "minplayers",
+                    "maxplayers",
+                    "averagerating",
+                    "averagecomplexity",
+                    "playtime",
+                    "domainscolumn",
+                    "mechanicscolumn"
+                ],
+                "properties": {
+                    "idgame": {
+                        "$id": "#/items/anyOf/0/properties/idgame",
+                        "type": "integer",
+                        "title": "The idgame schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                            187645
+                        ]
+                    },
+                    "name": {
+                        "$id": "#/items/anyOf/0/properties/name",
+                        "type": "string",
+                        "title": "The name schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Star Wars: Rebellion"
+                        ]
+                    },
+                    "year": {
+                        "$id": "#/items/anyOf/0/properties/year",
+                        "type": "integer",
+                        "title": "The year schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                            2016
+                        ]
+                    },
+                    "minplayers": {
+                        "$id": "#/items/anyOf/0/properties/minplayers",
+                        "type": "integer",
+                        "title": "The minplayers schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                            2
+                        ]
+                    },
+                    "maxplayers": {
+                        "$id": "#/items/anyOf/0/properties/maxplayers",
+                        "type": "integer",
+                        "title": "The maxplayers schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                            4
+                        ]
+                    },
+                    "averagerating": {
+                        "$id": "#/items/anyOf/0/properties/averagerating",
+                        "type": "number",
+                        "title": "The averagerating schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0.0,
+                        "examples": [
+                            8.42
+                        ]
+                    },
+                    "averagecomplexity": {
+                        "$id": "#/items/anyOf/0/properties/averagecomplexity",
+                        "type": "number",
+                        "title": "The averagecomplexity schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0.0,
+                        "examples": [
+                            3.71
+                        ]
+                    },
+                    "playtime": {
+                        "$id": "#/items/anyOf/0/properties/playtime",
+                        "type": "integer",
+                        "title": "The playtime schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                            240
+                        ]
+                    },
+                    "domainscolumn": {
+                        "$id": "#/items/anyOf/0/properties/domainscolumn",
+                        "type": "string",
+                        "title": "The domainscolumn schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "{\"Thematic games\"}"
+                        ]
+                    },
+                    "mechanicscolumn": {
+                        "$id": "#/items/anyOf/0/properties/mechanicscolumn",
+                        "type": "string",
+                        "title": "The mechanicscolumn schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "{\"Area Majority / Influence\",\"Area Movement\",Area-Impulse,\"Delayed Purchase\",\"Dice Rolling\",\"Hand Management\",\"Team-Based Game\",\"Variable Player Powers\"}"
+                        ]
+                    }
+                },
+                "additionalProperties": true
+            }
+        ]
+    }
+}
