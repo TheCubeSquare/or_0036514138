@@ -1,0 +1,1 @@
+document.getElementById("metadata").innerHTML = "Lorem ipsum is a placeholder text";
