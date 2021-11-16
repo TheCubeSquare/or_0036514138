@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "./tabletopgames.json",
+    "$id": "schema.json",
     "type": "array",
     "title": "Tabletop games schema",
     "description": "Schema for the tabletop games' database.",
@@ -12,7 +12,7 @@
             {
                 "$id": "#/items/anyOf/0",
                 "type": "object",
-                "title": "Tabletop game",
+                "title": "The tabletopgame schema",
                 "description": "Instance of a single tabletop game.",
                 "required": [
                     "idgame",
