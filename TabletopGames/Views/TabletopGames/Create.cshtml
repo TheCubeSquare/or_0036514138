@@ -1,0 +1,71 @@
+﻿@model TabletopGames.Models.TabletopGame
+
+@{
+    ViewBag.Title = "New Tabletop Game";
+}
+
+<h2>New Tabletop Game</h2>
+
+<form asp-action="Create" method="post">
+    <div asp-validation-summary="All"></div>
+
+    <div class="form-group">
+        <label asp-for="IdGame"></label>
+        <div><span asp-validation-for="IdGame" class="text-danger"></span></div>
+        <input asp-for="IdGame" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NameGame"></label>
+        <div><span asp-validation-for="NameGame" class="text-danger"></span></div>
+        <input asp-for="NameGame" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="YearGame"></label>
+        <div><span asp-validation-for="YearGame" class="text-danger"></span></div>
+        <input asp-for="YearGame" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="MinPlayers"></label>
+        <div><span asp-validation-for="MinPlayers" class="text-danger"></span></div>
+        <input asp-for="MinPlayers" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="MaxPlayers"></label>
+        <div><span asp-validation-for="MaxPlayers" class="text-danger"></span></div>
+        <input asp-for="MaxPlayers" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="AverageRating"></label>
+        <div><span asp-validation-for="AverageRating" class="text-danger"></span></div>
+        <input asp-for="AverageRating" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="AverageComplexity"></label>
+        <div><span asp-validation-for="AverageComplexity" class="text-danger"></span></div>
+        <input asp-for="AverageComplexity" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PlayTime"></label>
+        <div><span asp-validation-for="PlayTime" class="text-danger"></span></div>
+        <input asp-for="PlayTime" class="form-control" />
+    </div>
+
+    <div class="text-center">
+        <button class="btn btn-primary" type="submit">Add</button>
+        <a asp-action="Index"
+           asp-route-page="@ViewBag.CurrentPage"
+           asp-route-sort="@ViewBag.Sort"
+           asp-route-ascending="@ViewBag.Ascending" class="btn btn-default">Cancel</a>
+    </div>
+</form>
+
+@section scripts {
+  <partial name="IncludeValidation" />
+}
