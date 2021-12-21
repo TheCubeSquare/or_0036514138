@@ -316,3 +316,4 @@ C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopG
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\TabletopGames.genruntimeconfig.cache
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\Razor\Views\GameDomain\Index.cshtml.g.cs
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\Razor\Views\GameMechanic\Index.cshtml.g.cs
+C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\Razor\Views\TabletopGames\Details.cshtml.g.cs

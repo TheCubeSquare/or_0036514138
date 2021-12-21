@@ -1,0 +1,36 @@
+﻿@model TabletopGames.ViewModels.TabletopGameDetails
+
+<form>
+    <div class="form-group">
+        <label asp-for="TabletopGame.IdGame"></label>
+        <input asp-for="TabletopGame.IdGame" class="form-control" readonly />
+    </div>
+    <div class="form-group">
+        <label asp-for="TabletopGame.NameGame"></label>
+        <input asp-for="TabletopGame.NameGame" class="form-control" readonly />
+    </div>
+    <div class="form-group">
+        <label asp-for="TabletopGame.YearGame"></label>
+        <input asp-for="TabletopGame.YearGame" class="form-control" readonly />
+    </div>
+    <div class="form-group">
+        <label asp-for="TabletopGame.MinPlayers"></label>
+        <input asp-for="TabletopGame.MinPlayers" class="form-control" readonly />
+    </div>
+    <div class="form-group">
+        <label asp-for="TabletopGame.MaxPlayers"></label>
+        <input asp-for="TabletopGame.MaxPlayers" class="form-control" readonly />
+    </div>
+    <div class="form-group">
+        <label asp-for="TabletopGame.AverageRating"></label>
+        <input asp-for="TabletopGame.AverageRating" class="form-control" readonly />
+    </div>
+    <div class="form-group">
+        <label asp-for="TabletopGame.AverageComplexity"></label>
+        <input asp-for="TabletopGame.AverageComplexity" class="form-control" readonly />
+    </div>
+    <div class="form-group">
+        <label asp-for="TabletopGame.PlayTime"></label>
+        <input asp-for="TabletopGame.PlayTime" class="form-control" readonly />
+    </div>
+</form>

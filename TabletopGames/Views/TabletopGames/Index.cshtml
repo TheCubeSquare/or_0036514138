@@ -81,6 +81,16 @@
             <td class="text-left">@izv.PlayTime</td>
 
             <td>
+                <a asp-action="Details"
+                   asp-route-id="@izv.IdGame"
+                   asp-route-page="@Model.PagingInfo.CurrentPage"
+                   asp-route-sort="@Model.PagingInfo.Sort"
+                   asp-route-ascending="@Model.PagingInfo.Ascending"
+                   class="btn btn-sm btn-success"
+                   title="Details">Details</a>
+            </td>
+
+            <td>
                 <a asp-action="Edit"
                    asp-route-id="@izv.IdGame"
                    asp-route-page="@Model.PagingInfo.CurrentPage"

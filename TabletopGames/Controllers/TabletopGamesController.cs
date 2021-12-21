@@ -62,6 +62,49 @@ namespace TabletopGames.Controllers
             return View(model);
         }
 
+        public async Task<IActionResult> Details(int id)
+        {
+            ViewBag.Tables = Output.Tables;
+
+            var tabletopGame = await ctx.TabletopGame
+                                  .Select(p => new TabletopGameViewModel
+                                  {
+                                      IdGame = p.IdGame,
+                                      NameGame = p.NameGame,
+                                      YearGame = p.YearGame,
+                                      MinPlayers = p.MinPlayers,
+                                      MaxPlayers = p.MaxPlayers,
+                                      AverageRating = p.AverageRating,
+                                      AverageComplexity = p.AverageComplexity,
+                                      PlayTime = p.PlayTime
+                                  })
+                                  .AsNoTracking()
+                                  .Where(o => o.IdGame == id)
+                                  .SingleOrDefaultAsync();
+
+            if (tabletopGame != null)
+            {
+                var pagingInfo = new PagingInfo
+                {
+                    CurrentPage = 1,
+                    Ascending = true,
+                    Sort = 1
+                };
+
+                var model = new TabletopGameDetails
+                {
+                    TabletopGame = tabletopGame,
+                    PagingInfo = pagingInfo
+                };
+
+                return View(model);
+            }
+            else
+            {
+                return NotFound($"Incorrect use of the id {id}");
+            }
+        }
+
         [HttpGet]
         public async Task<IActionResult> Create(int page = 1, int sort = 1, bool ascending = true)
         {
