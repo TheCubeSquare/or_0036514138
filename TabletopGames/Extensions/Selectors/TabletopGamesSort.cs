@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace TabletopGames.Extensions.Selectors
 {
-    public static class GlavniSustavSort
+    public static class TabletopGamesSort
     {
         public static IQueryable<TabletopGame> ApplySort(this IQueryable<TabletopGame> query, int sort, bool ascending)
         {

@@ -32,8 +32,6 @@ namespace TabletopGames.Controllers
 
             query = query.ApplySort(sort, ascending);
 
-            string stavke = String.Empty;
-
             var tabletopGames = await query
                 .Select(p => new TabletopGameViewModel
                 {
