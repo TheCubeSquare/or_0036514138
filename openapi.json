@@ -1,0 +1,223 @@
+{
+    "openapi": "3.0.3",
+    "info": {
+        "info": "Tabletop Games",
+        "version": "3.0",
+        "contact": "",
+        "licence": ""
+    },
+    "paths": {
+        "/TabletopGame/{id}": {
+            "get": {
+                "summary": "Get tabletop game from collection by ID",
+                "description": "Returns a single tabletop game",
+                "parameters": [
+                    {
+                        "name": "IdGame",
+                        "in": "path",
+                        "description": "ID of the resource",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Fetch successfull",
+                        "schema": {
+                            "$ref": "#/schemas/TabletopGame"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid ID"
+                    },
+                    "404": {
+                        "description": "Game not found"
+                    }
+                }
+            },
+            "post": {
+                "summary": "Updates a tabletop game from collectionby ID",
+                "description": "Updates a tabletop game",
+                "parameters": [
+                    {
+                        "name": "IdGame",
+                        "in": "path",
+                        "description": "ID of the resource",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Update successful",
+                        "schema": {
+                            "$ref": "#/schemas/TabletopGame"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid ID"
+                    },
+                    "404": {
+                        "description": "Game not found"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete tabletop game from collection by ID",
+                "description": "Deletes a single tabletop game",
+                "parameters": [
+                    {
+                        "name": "IdGame",
+                        "in": "path",
+                        "description": "ID of the resource",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Delete successful",
+                        "schema": {
+                            "$ref": "#/schemas/TabletopGame"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid ID"
+                    },
+                    "404": {
+                        "description": "Game not found"
+                    }
+                }
+            }
+        },
+        "/TabletopGame/{Name}": {
+            "get": {
+                "summary": "Get tabletop game from collection by name",
+                "description": "Returns a single tabletop game",
+                "parameters": [
+                    {
+                        "name": "NameGame",
+                        "in": "path",
+                        "description": "Name of the resource",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Fetch successfull",
+                        "schema": {
+                            "$ref": "#/schemas/TabletopGame"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid name"
+                    },
+                    "404": {
+                        "description": "Game not found"
+                    }
+                }
+            },
+            "post": {
+                "summary": "Updates a tabletop game from collectionby name",
+                "description": "Updates a tabletop game",
+                "parameters": [
+                    {
+                        "name": "NameGame",
+                        "in": "path",
+                        "description": "name of the resource",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Update successful",
+                        "schema": {
+                            "$ref": "#/schemas/TabletopGame"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid ID"
+                    },
+                    "404": {
+                        "description": "Game not found"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Delete tabletop game from collection by name",
+                "description": "Deletes a single tabletop game",
+                "parameters": [
+                    {
+                        "name": "NameGame",
+                        "in": "path",
+                        "description": "Name of the resource",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Delete successful",
+                        "schema": {
+                            "$ref": "#/schemas/TabletopGame"
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid ID"
+                    },
+                    "404": {
+                        "description": "Game not found"
+                    }
+                }
+            }
+        },
+        "/GameDomain": {
+            "get": {
+                "summary": "Get all game domains",
+                "description": "Returns all game domains",
+                "responses": {
+                    "200": {
+                        "description": "Fetch successfull",
+                        "schema": {
+                            "$ref": "#/schemas/GameDomain"
+                        }
+                    },
+                    "400": {
+                        "description": "Nothing was found"
+                    },
+                    "404": {
+                        "description": "Domains weren't found"
+                    }
+                }
+            }
+        },
+        "/GameMechanic": {
+            "get": {
+                "summary": "Get all game mechanics",
+                "description": "Returns all game mechanics",
+                "responses": {
+                    "200": {
+                        "description": "Fetch successfull",
+                        "schema": {
+                            "$ref": "#/schemas/GameMechanic"
+                        }
+                    },
+                    "400": {
+                        "description": "Nothing was found"
+                    },
+                    "404": {
+                        "description": "Mechanics weren't found"
+                    }
+                }
+            }
+        }
+    }
+}
