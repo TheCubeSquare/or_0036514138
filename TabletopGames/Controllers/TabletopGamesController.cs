@@ -174,7 +174,6 @@ namespace TabletopGames.Controllers
             return RedirectToAction(nameof(Index), new { page = page, sort = sort, ascending = ascending });
         }
 
-        [HttpDelete]
         public async Task<IActionResult> Delete(int id, int page = 1, int sort = 1, bool ascending = true)
         {
             ViewBag.Tables = Output.Tables;

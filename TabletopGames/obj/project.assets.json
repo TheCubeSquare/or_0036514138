@@ -8522,11 +8522,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Matija\\source\\repos\\TabletopGames\\TabletopGames.csproj",
+      "projectUniqueName": "C:\\Users\\Matija\\Desktop\\Matija\\Faks\\Otvoreno racunarstvo\\or_0036514138\\TabletopGames\\TabletopGames.csproj",
       "projectName": "TabletopGames",
-      "projectPath": "C:\\Users\\Matija\\source\\repos\\TabletopGames\\TabletopGames.csproj",
+      "projectPath": "C:\\Users\\Matija\\Desktop\\Matija\\Faks\\Otvoreno racunarstvo\\or_0036514138\\TabletopGames\\TabletopGames.csproj",
       "packagesPath": "C:\\Users\\Matija\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Matija\\source\\repos\\TabletopGames\\obj\\",
+      "outputPath": "C:\\Users\\Matija\\Desktop\\Matija\\Faks\\Otvoreno racunarstvo\\or_0036514138\\TabletopGames\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
