@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using TabletopGames.Models;
 using TabletopGames.ViewModels;
 using System.Threading.Tasks;

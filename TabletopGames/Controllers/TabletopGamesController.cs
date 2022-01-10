@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using TabletopGames.Models;
 using TabletopGames.ViewModels;
 using System.Threading.Tasks;
@@ -10,6 +11,9 @@ using TabletopGames.Extensions.Selectors;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Web;
+using Newtonsoft.Json;
+using System.IO;
 
 namespace TabletopGames.Controllers
 {
@@ -258,6 +262,179 @@ namespace TabletopGames.Controllers
                                   .ToListAsync();
             ViewBag.Domains = new SelectList(domains, nameof(GameDomain.IdDomain), nameof(GameDomain.NameDomain));
             ViewBag.Mechanics = new SelectList(mechanics, nameof(GameMechanic.IdMechanic), nameof(GameMechanic.NameMechanic));
+        }
+
+        public async Task<IActionResult> Download()
+        {
+            ViewBag.Tables = Output.Tables;
+
+            var query = ctx.TabletopGame.AsNoTracking();
+
+            query = query.ApplySort(1, true);
+
+            var tabletopGames = await query
+                .Select(p => new TabletopGameViewModel
+                {
+                    IdGame = p.IdGame,
+                    NameGame = p.NameGame,
+                    YearGame = p.YearGame,
+                    MinPlayers = p.MinPlayers,
+                    MaxPlayers = p.MaxPlayers,
+                    AverageRating = p.AverageRating,
+                    AverageComplexity = p.AverageComplexity,
+                    PlayTime = p.PlayTime
+                })
+                .ToListAsync();
+
+            var pagingInfo = new PagingInfo
+            {
+                CurrentPage = 1,
+                Ascending = true,
+                Sort = 1
+            };
+
+            var model = new TabletopGamesViewModel
+            {
+                TabletopGames = tabletopGames,
+                PagingInfo = pagingInfo
+            };
+
+            GetFile(model, 1);
+            GetFile(model, 0);
+
+            return View();
+        }
+
+        private string GenerateJSON(TabletopGamesViewModel model, bool single)
+        {
+            StringBuilder fileContent = new StringBuilder();
+            if (!single)
+            {
+                fileContent.Append("[");
+            }
+
+            foreach (var obj in model.TabletopGames)
+            {
+                fileContent.Append("{\"@context\": {");
+                fileContent.Append("\"@vocab\": \"https://schema.org/\",");
+                fileContent.Append("\"NameGame\": \"name\",");
+                fileContent.Append("\"MinPlayer\": \"minValue\",");
+                fileContent.Append("\"MaxPlayer\": \"maxValue\",");
+                fileContent.Append("\"AverageRating\": \"ratingValue\"},");
+
+                fileContent.Append("\"IdGame\": " + obj.IdGame + ",");
+                fileContent.Append("\"NameGame\": \"" + obj.NameGame + "\",");
+                fileContent.Append("\"YearGame\": " + obj.YearGame + ",");
+                fileContent.Append("\"MinPlayer\": " + obj.MinPlayers + ",");
+                fileContent.Append("\"MaxPlayer\": " + obj.MaxPlayers + ",");
+                fileContent.Append("\"AverageRating\": " + obj.AverageRating + ",");
+                fileContent.Append("\"AverageComplexity\": " + obj.AverageComplexity + ",");
+                fileContent.Append("\"PlayTime\": " + obj.PlayTime + "},");
+            }
+
+            fileContent.Remove(fileContent.Length - 1, 1);
+
+            if (!single)
+            {
+                fileContent.Append("]");
+            }
+
+            return fileContent.ToString();
+        }
+
+        private string GenerateSoloJSON(TabletopGameViewModel model)
+        {
+            StringBuilder fileContent = new StringBuilder();
+
+            fileContent.Append("{\"@context\": {");
+            fileContent.Append("\"@vocab\": \"https://schema.org/\",");
+            fileContent.Append("\"NameGame\": \"name\",");
+            fileContent.Append("\"MinPlayer\": \"minValue\",");
+            fileContent.Append("\"MaxPlayer\": \"maxValue\",");
+            fileContent.Append("\"AverageRating\": \"ratingValue\"},");
+
+            fileContent.Append("\"IdGame\": " + model.IdGame + ",");
+            fileContent.Append("\"NameGame\": \"" + model.NameGame + "\",");
+            fileContent.Append("\"YearGame\": " + model.YearGame + ",");
+            fileContent.Append("\"MinPlayer\": " + model.MinPlayers + ",");
+            fileContent.Append("\"MaxPlayer\": " + model.MaxPlayers + ",");
+            fileContent.Append("\"AverageRating\": " + model.AverageRating + ",");
+            fileContent.Append("\"AverageComplexity\": " + model.AverageComplexity + ",");
+            fileContent.Append("\"PlayTime\": " + model.PlayTime + "}");
+
+            return fileContent.ToString();
+        }
+
+        private string GenerateCSV(TabletopGamesViewModel model)
+        {
+            StringBuilder fileContent = new StringBuilder("IdGame,NameGame,YearGame,MinPlayers,MaxPlayers,AverageRating,AverageComplexity,PlayTime\n");
+            foreach (var obj in model.TabletopGames)
+            {
+                string line = "";
+                line += obj.IdGame + "," +
+                               obj.NameGame + "," +
+                               obj.YearGame + "," +
+                               obj.MinPlayers + "," +
+                               obj.MaxPlayers + "," +
+                               obj.AverageRating + "," +
+                               obj.AverageComplexity + "," +
+                               obj.PlayTime + "\n";
+
+                fileContent.Append(line);
+            }
+
+            return fileContent.ToString();
+        }
+
+        [HttpGet]
+        private void GetFile(TabletopGamesViewModel model, int file)
+        {
+            var logPath = @"bin\tabletopgames.json";
+            var logFile = System.IO.File.Create(logPath);
+            var logWriter = new StreamWriter(logFile);
+            logWriter.Write(GenerateJSON(model, false));
+            logWriter.Dispose();
+
+            logPath = @"bin\tabletopgames.csv";
+            logFile = System.IO.File.Create(logPath);
+            logWriter = new StreamWriter(logFile);
+            logWriter.Write(GenerateCSV(model));
+            logWriter.Dispose();
+        }
+
+        private void GetSoloFile(TabletopGameViewModel model)
+        {
+            var logPath = @"bin\tabletopgame.json";
+            var logFile = System.IO.File.Create(logPath);
+            var logWriter = new StreamWriter(logFile);
+            logWriter.Write(GenerateSoloJSON(model));
+            logWriter.Dispose();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> DownloadOne(int id)
+        {
+            ViewBag.Tables = Output.Tables;
+
+            var model = await ctx.TabletopGame
+                                  .Select(p => new TabletopGameViewModel
+                                  {
+                                      IdGame = p.IdGame,
+                                      NameGame = p.NameGame,
+                                      YearGame = p.YearGame,
+                                      MinPlayers = p.MinPlayers,
+                                      MaxPlayers = p.MaxPlayers,
+                                      AverageRating = p.AverageRating,
+                                      AverageComplexity = p.AverageComplexity,
+                                      PlayTime = p.PlayTime
+                                  })
+                                  .AsNoTracking()
+                                  .Where(o => o.IdGame == id)
+                                  .SingleOrDefaultAsync();
+
+            GetSoloFile(model);
+
+            return View(model);
         }
     }
 }

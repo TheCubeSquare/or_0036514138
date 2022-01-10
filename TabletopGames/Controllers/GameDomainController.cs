@@ -1,15 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using TabletopGames.Models;
 using TabletopGames.ViewModels;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Options;
 using System.Linq;
 using TabletopGames.Extensions.Selectors;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace TabletopGames.Controllers
 {

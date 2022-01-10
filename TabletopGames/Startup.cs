@@ -11,6 +11,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using FluentValidation.AspNetCore;
+using Auth0.AspNetCore.Authentication;
+using TabletopGames.Support;
 
 namespace TabletopGames
 {
@@ -27,6 +29,15 @@ namespace TabletopGames
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.ConfigureSameSiteNoneCookies();
+
+            services.AddAuth0WebAppAuthentication(options => {
+                options.Domain = Configuration["Auth0:Domain"];
+                options.ClientId = Configuration["Auth0:ClientId"];
+                options.ClientSecret = Configuration["Auth0:ClientSecret"];
+                options.CallbackPath = new PathString("/TabletopGames");
+            });
+
             services.AddControllersWithViews();
             services.AddDbContext<Models.TabletopGamesContext>(options => options.UseSqlServer(Configuration.GetConnectionString("TabletopGames")));
             services.AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<Startup>());
@@ -53,18 +64,22 @@ namespace TabletopGames
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseStaticFiles()
-               .UseRouting()
-               .UseEndpoints(endpoints =>
-               {
-                   endpoints.MapControllerRoute(
-                       name: "default",
-                       pattern: "{controller=TabletopGames}/{action=Index}/{id?}"
-                    );
-                   endpoints.MapDefaultControllerRoute();
-               });
+            app.UseStaticFiles();
+            app.UseRouting();
 
+            app.UseCookiePolicy();
+
+            app.UseAuthentication();
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}"
+                 );
+                endpoints.MapDefaultControllerRoute();
+            });
         }
-
     }
 }

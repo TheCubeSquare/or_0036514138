@@ -166,9 +166,11 @@ C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopG
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\bin\Debug\netcoreapp3.1\TabletopGames.pdb
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\bin\Debug\netcoreapp3.1\TabletopGames.Views.dll
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\bin\Debug\netcoreapp3.1\TabletopGames.Views.pdb
+C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\bin\Debug\netcoreapp3.1\Auth0.AspNetCore.Authentication.dll
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\bin\Debug\netcoreapp3.1\FluentValidation.dll
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
@@ -281,13 +283,10 @@ C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopG
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\TabletopGames.csproj.AssemblyReference.cache
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\TabletopGames.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\TabletopGames.AssemblyInfoInputs.cache
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\TabletopGames.AssemblyInfo.cs
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\TabletopGames.csproj.CoreCompileInputs.cache
-C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\TabletopGames.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\TabletopGames.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\TabletopGames.RazorAssemblyInfo.cache
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\TabletopGames.RazorAssemblyInfo.cs
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\staticwebassets\TabletopGames.StaticWebAssets.Manifest.cache
@@ -296,6 +295,8 @@ C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopG
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\TabletopGames.TagHelpers.input.cache
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\TabletopGames.TagHelpers.output.cache
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\TabletopGames.RazorCoreGenerate.cache
+C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\Razor\Views\GameDomain\Index.cshtml.g.cs
+C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\Razor\Views\GameMechanic\Index.cshtml.g.cs
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
@@ -303,6 +304,7 @@ C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopG
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\Razor\Views\TabletopGames\Create.cshtml.g.cs
+C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\Razor\Views\TabletopGames\Details.cshtml.g.cs
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\Razor\Views\TabletopGames\Edit.cshtml.g.cs
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\Razor\Views\TabletopGames\Index.cshtml.g.cs
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
@@ -314,6 +316,9 @@ C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopG
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\TabletopGames.dll
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\TabletopGames.pdb
 C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\TabletopGames.genruntimeconfig.cache
-C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\Razor\Views\GameDomain\Index.cshtml.g.cs
-C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\Razor\Views\GameMechanic\Index.cshtml.g.cs
-C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\Razor\Views\TabletopGames\Details.cshtml.g.cs
+C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\TabletopGames.csproj.AssemblyReference.cache
+C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\Razor\Views\Account\AccessDenied.cshtml.g.cs
+C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\Razor\Views\Account\Profile.cshtml.g.cs
+C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\Razor\Views\TabletopGames\Download.cshtml.g.cs
+C:\Users\Matija\Desktop\Matija\Faks\Otvoreno racunarstvo\or_0036514138\TabletopGames\obj\Debug\netcoreapp3.1\Razor\Views\TabletopGames\DownloadOne.cshtml.g.cs
